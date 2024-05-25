@@ -1,0 +1,105 @@
+.top-companies {
+  width: 100vw;
+  padding: 60px 0;
+  background-color: #fffcea;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 48px;
+  color: #374957;
+  text-align: center;
+}
+
+.heading-colour {
+  background: -webkit-linear-gradient(bottom right, #ebcb2e, #b73bbe);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logos {
+  margin-top: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  content: '';
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to right, #fffcea, rgba(255, 255, 255, 0));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to left, #fffcea, rgba(255, 255, 255, 0));
+}
+
+.logos:hover .logo-slider {
+  animation-play-state: paused;
+}
+
+.logo-slider {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+.logo {
+  display: inline;
+  margin: 0 20px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-companies {
+    padding: 40px 0;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .logos {
+    margin-top: 40px;
+  }
+  .logo-slider img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 26px;
+  }
+  .logos:before,
+  .logos:after {
+    width: 50px;
+  }
+  .logo-slider img {
+    height: 80px;
+  }
+}

@@ -1,0 +1,314 @@
+.navbar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  margin-top: 96px;
+  height: 48px;
+  display: flex;
+  background-color: #3b3b3e;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.nav-container {
+  margin: 0px auto;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 14px 10px 9px 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #cfd0d2;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+  transition: ease;
+}
+
+.nav-link:hover {
+  color: white;
+  border-bottom: 5px solid #ffa50b;
+}
+
+.hero {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.hero-container {
+  margin: 200px 0 80px 80px;
+}
+
+.iit-delhi {
+  display: flex;
+  color: #434347;
+  justify-content: center;
+  padding: 12px;
+  width: fit-content;
+  border: 1px solid #ffa50b;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.hat {
+  margin-right: 5px;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+.heading1 {
+  font-weight: 700;
+  font-size: 64px;
+  max-width: 800px;
+  margin: 40px 0 25px;
+  color: #595961;
+}
+
+.purple {
+  color: #992e9d;
+}
+
+.heading2 {
+  font-size: 20px;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  margin-right: 12px;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fffcea;
+  color: #bb5302;
+  border: 1px solid #fff4c5;
+  border-radius: 30px;
+}
+
+.awardStar {
+  margin-right: 5px;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.button1 {
+  display: flex;
+  align-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fcf5fe;
+  padding: 20px;
+  border: none;
+  background: linear-gradient(to top, #b73bbe, #992e9d);
+  border-radius: 20px;
+  transition: ease;
+}
+
+.button1:hover {
+  background: linear-gradient(to top, #b945bf, #c12bc6);
+}
+
+.button2 {
+  display: flex;
+  align-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fcf5fe;
+  padding: 20px;
+  border: none;
+  background-color: white;
+  color: #992e9d;
+}
+
+.button1 img,
+.button2 img {
+  margin-left: 8px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  margin-left: -80px;
+  padding: 25px 0;
+  width: 100vw;
+  background: linear-gradient(
+    to top,
+    rgba(185, 59, 191, 0.05),
+    rgba(153, 46, 157, 0.05)
+  );
+  border: 1px solid #f9ebfc;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature img {
+  margin-right: 15px;
+}
+.number {
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  color: #992e9d;
+}
+
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  color: #686972;
+  width: max-content;
+}
+
+.vl {
+  border-left: 1px solid #f4d6f8;
+  height: 100px;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    margin-left: 50px;
+  }
+  .iit-delhi {
+    font-size: 18px;
+  }
+  .heading1 {
+    font-size: 56px;
+  }
+  .heading2 {
+    font-size: 18px;
+  }
+  .tags {
+    margin: 24px 0;
+  }
+  .tag {
+    font-size: 14px;
+  }
+  .features {
+    margin-left: -50px;
+    padding: 20px 0;
+  }
+  .feature {
+    align-items: center;
+  }
+  .vl {
+    height: 90px;
+  }
+  .feature img {
+    margin-right: 6px;
+    width: 55px;
+  }
+  .number {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
+  .hero-container {
+    margin: 180px 0 60px 35px;
+  }
+  .iit-delhi {
+    font-size: 16px;
+  }
+  .features {
+    display: none;
+  }
+  .heading1 {
+    font-size: 38px;
+    margin: 28px 0 20px;
+  }
+  .heading2 {
+    font-size: 16px;
+  }
+  .tags {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .tag {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin-top: 72px;
+  }
+  .nav-link {
+    padding: 14px 7px 10px;
+    font-size: 12px;
+    border-bottom: 3px solid transparent;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid #ffa50b;
+  }
+  .hero-container {
+    margin: 160px 16px 50px 16px;
+  }
+  .heading1 {
+    font-size: 34px;
+  }
+  .heading2 {
+    font-size: 15px;
+  }
+  .tags {
+    margin: 21px 0 28px;
+  }
+  .tag {
+    font-size: 12px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+  .tag img {
+    display: none;
+  }
+  .button-wrapper {
+    display: inline;
+  }
+  .button1,
+  .button2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 17px;
+    font-size: 16px;
+  }
+}
